@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/projects/4/4.scss" />
+    <link rel="stylesheet" href="/projects/4/4.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="navi">
+      <div id="header">
+        <div class="logo">
+          <a href="#">ANUBIS NEWS</a>
+        </div>
+        <nav>
+          <form class="search" action="search.php">
+            <input name="q" placeholder=" ... جستجو" type="search" />
+          </form>
+          <ul>
+            <li>
+              <a class="nalinks" href="">ارشیو</a>
+            </li>
+            <li>
+               
+              <a class="nalinks" href="">استان ها</a>
+             
+              <ul class="mega-dropdown">
+                
+                <li class="row">
+                  <ul class="mega-col">
+                    <li><a href="#">آذربایجان شرقی</a></li>
+                    <li><a href="#">اردبیل</a></li>
+                    <li><a href="#">البرز</a></li>
+                    <li><a href="#">بوشهر</a></li>
+                    <li><a href="#">چهارمحال و بختیاری</a></li>
+                    <li><a href="#">خراسان رضوی</a></li>
+                    <li><a href="#">خوزستان</a></li>
+                    <li><a href="#">سمنان</a></li>
+                  </ul>
+                  <ul class="mega-col">
+                    <li><a href="#">آذربایجان غربی</a></li>
+                    <li><a href="#">هرمزگان</a></li>
+                    <li><a href="#">ایلام</a></li>
+                    <li><a href="#">تهران</a></li>
+                    <li><a href="#">خراسان جنوبی</a></li>
+                    <li><a href="#">خراسان شمالی</a></li>
+                    <li><a href="#">زنجان</a></li>
+                    <li><a href="#">سیستان و بلوچستان</a></li>
+                  </ul>
+                  <ul class="mega-col">
+                    <li><a href="#">فارس</a></li>
+                    <li><a href="#">قم</a></li>
+                    <li><a href="#">قزوین</a></li>
+                    <li><a href="#">کرمان</a></li>
+                    <li><a href="#">کهگیلویه و بویراحمد</a></li>
+                    <li><a href="#">گیلان</a></li>
+                    <li><a href="#">مازندران</a></li>
+                    <li><a href="#">هرمزگان</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="nalinks" href="">پژوهش</a>
+              <ul>
+                <li><a href="#">کتابخانه</a></li>
+                <li><a href="#">فیلم خانه</a></li>
+                <li><a href="#">تاریخ شفاهی</a></li>
+                <li><a href="#">میزگرد</a></li>
+                <li><a href="#">داده کاوی</a></li>
+                <li><a href="#">دانشنامه</a></li>
+                <li><a href="#">رصد رسانه ها</a></li>
+                <li><a href="#">اندیشه</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nalinks" href="">جهان</a>
+              <ul class="mega-dropdown">
+                <li class="row">
+                  <ul class="mega-col jahan">
+                    <li><a href="#">آسیای غربی</a></li>
+                    <li><a href="#">آسیای شرقی</a></li>
+                    <li><a href="#">آسیای جنوبی</a></li>
+                    <li><a href="#">آسیای میانه</a></li>
+                    <li><a href="#">آفریقا</a></li>
+                  </ul>
+
+                  <ul class="mega-col jahan">
+                    <li><a href="#">امریکای شمالی</a></li>
+                    <li><a href="#">امریکای جنوبی</a></li>
+                    <li><a href="#">امریکای لاتین</a></li>
+                    <li><a href="#">اقیانوسیه</a></li>
+                    <li><a href="#">اروپا</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="nalinks" href="">ایران</a>
+              <ul>
+                <li><a href="#">سیاسی</a></li>
+                <li><a href="#">اقتصادی</a></li>
+                <li><a href="#">فرهنگی</a></li>
+                <li><a href="#">ورزشی</a></li>
+                <li><a href="#">هنری</a></li>
+                <li><a href="#">حوادث</a></li>
+                <li><a href="#">عمومی</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="nalinks" href=""> عکسهای روز</a>
+            </li>
+            <li>
+              <a class="nalinks" href="">صفحه اصلی</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div id="mobile">
+           <div class="nav">
+        <input type="checkbox" id="menu" />
+        <label for="menu" id="nav-icon">&#9776;</label>
+        <div class="multi-level">
+          <ul>
+          <div class="item">
+             <a href="#"> صفحه اصلی</a>
+          </div>
+         </ul>
+         <ul>  <div class="item">
+             <a href="#"> عکسهای روز</a>
+          </div></ul>              
+          <div class="item">
+            <input type="checkbox" id="B" />
+            <img src="/NAVbar/dropdown3 img.png" class="arrow" /><label for="B"
+              >ایران</label
+            >
+            <ul>
+                           <li><a href="#">سیاسی</a></li>
+                <li><a href="#">اقتصادی</a></li>
+                <li><a href="#">فرهنگی</a></li>
+                <li><a href="#">ورزشی</a></li>
+                <li><a href="#">هنری</a></li>
+                <li><a href="#">حوادث</a></li>
+                <li><a href="#">عمومی</a></li>   
+              
+            </ul>
+          </div>
+   
+          <div class="item">
+            <input type="checkbox" id="C" />
+            <img src="/NAVbar/dropdown3 img.png" class="arrow" /><label for="C"
+              > جهان</label
+            >
+            <ul>
+               <li><a href="#">آسیای غربی</a></li>
+                    <li><a href="#">آسیای شرقی</a></li>
+                    <li><a href="#">آسیای جنوبی</a></li>
+                    <li><a href="#">آسیای میانه</a></li>
+                    <li><a href="#">آفریقا</a></li>
+               
+
+                    <li><a href="#">امریکای شمالی</a></li>
+                    <li><a href="#">امریکای جنوبی</a></li>
+                    <li><a href="#">امریکای لاتین</a></li>
+                    <li><a href="#">اقیانوسیه</a></li>
+                    <li><a href="#">اروپا</a></li>         
+               
+                </div>  
+          <div class="item">
+            <input type="checkbox" id="A" />
+            <img src="/NAVbar/dropdown3 img.png" class="arrow" /><label for="A"
+              > پژوهش</label
+            >
+            <ul>
+               <li><a href="#">کتابخانه</a></li>
+                <li><a href="#">فیلم خانه</a></li>
+                <li><a href="#">تاریخ شفاهی</a></li>
+                <li><a href="#">میزگرد</a></li>
+                <li><a href="#">داده کاوی</a></li>
+                <li><a href="#">دانشنامه</a></li>
+                <li><a href="#">رصد رسانه ها</a></li>
+                <li><a href="#">اندیشه</a></li>       
+                  </ul>
+                </div>  
+          <div class="item">
+            <input type="checkbox" id="D" />
+            <img src="/NAVbar/dropdown3 img.png" class="arrow" /><label for="D"
+              > استان‌ها</label
+            >
+            <ul>
+        <li><a href="#">آذربایجان شرقی</a></li>
+                    <li><a href="#">اردبیل</a></li>
+                    <li><a href="#">البرز</a></li>
+                    <li><a href="#">بوشهر</a></li>
+                    <li><a href="#">چهارمحال و بختیاری</a></li>
+                    <li><a href="#">خراسان رضوی</a></li>
+                    <li><a href="#">خوزستان</a></li>
+                    <li><a href="#">سمنان</a></li>
+             <li><a href="#">فارس</a></li>
+               <li><a href="#">آذربایجان غربی</a></li>
+                    <li><a href="#">هرمزگان</a></li>
+                    <li><a href="#">ایلام</a></li>
+                    <li><a href="#">تهران</a></li>
+                    <li><a href="#">خراسان جنوبی</a></li>
+                    <li><a href="#">خراسان شمالی</a></li>
+                    <li><a href="#">زنجان</a></li>
+                    <li><a href="#">سیستان و بلوچستان</a></li>
+                    <li><a href="#">قم</a></li>
+                    <li><a href="#">قزوین</a></li>
+                    <li><a href="#">کرمان</a></li>
+                    <li><a href="#">کهگیلویه و بویراحمد</a></li>
+                    <li><a href="#">گیلان</a></li>
+                    <li><a href="#">مازندران</a></li>
+                    <li><a href="#">هرمزگان</a></li>        
+                  </ul>
+                </div>  
+                  <ul>
+          <div class="item">
+             <a href="#"> آرشیو</a>
+          </div>
+         </ul>
+    </div>
+      </div>
+    </header>
+    <main id="mainasl">
+      <section>
+        <div class="a">
+          <div>
+            <img
+              src="https://img9.irna.ir/d/r2/2020/01/30/2/156924631.jpg"
+              alt=""
+            />
+            <h3>
+              جنبه‌های حقوقی دسترسی آژانس بین‌المللی انرژی اتمی
+            </h3>
+
+            <p>
+              تهران- ایرنا- «طرح هرگونه درخواست شفاف‌سازی یا دسترسی تکمیلی از
+              سوی آژانس مبتنی بر مدارک ادعایی و جعلی، در مغایرت با اساسنامه
+              آژانس و نظام ‌راستی‌آزمایی است و لذا هیچ‌ تعهدی را برای جمهوری
+              اسلامی ایران جهت اجابت اینگونه درخواست‌ها ایجاد نمی‌کند.»
+            </p>
+          </div>
+        </div>
+        <div class="b">
+          <div>
+            <img src="/image/news/157179896 (Copy).jpg" alt="" />
+            <h3>ابتکار: زنان ایران شهروندان درجه دو نیستند</h3>
+            <p>
+              تهران - ایرنا - معاون رئیس جمهوری در امور زنان و خانواده با تاکید
+              بر اینکه نگاه ما نسبت به بحث زنان، اسلامی و بر مبنای شرع است، گفت:
+              با استقرار این نگاه در سراسر کشور، دیگر زنان شهروندان درجه دو و
+              وابسته به پدران و همسران قلمداد نمی‌شوند.
+            </p>
+          </div>
+        </div>
+        <div class="c">
+          <div>
+            <img
+              src="https://img9.irna.ir/d/r1/2019/06/03/3/156369793.jpg"
+              alt=""
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Veritatis unde consequuntur dolorum. Laboriosam dolore eaque
+              aperiam obcaecati dolor soluta tempore! Lorem ipsum dolor sit
+              amet, consectetur adipisicing elit. Veritatis unde consequuntur
+              dolorum. Laboriosam dolore eaque aperiam obcaecati dolor soluta
+              tempore! aperiam obcaecati dolor soluta tempore! Lorem ipsum dolor
+              sit amet, consectetur adipisicing elit. Veritatis unde
+            </p>
+          </div>
+        </div>
+      </section>
+      <main id="main1">
+        <div class="d">
+          <h3>حوادث | حادثه ناوچه کنارک تعدادی متهم دارد</h3>
+        </div>
+        <div class="e">
+          <h3>
+            آسیای غربی | موافقت ملک سلمان با لغو کامل قوانین منع آمد و شد در
+            عربستان
+          </h3>
+        </div>
+        <div class="f">
+          <h3>
+            ورزش |  صالحی‌ امیری: به طور کامل آماده برگزاری اردوهای فدراسیون‌ها
+            هستیم
+          </h3>
+        </div>
+        <div class="g">
+          <h3>
+            آذربایجان شرقی  |  پل دوستی ایران و آذربایجان، خداآفرین را قطب صادرات
+            کشور می‌کند
+          </h3>
+        </div>
+        <div class="h">
+          <h3>
+            بهداشت و سلامت |  دفترچه بیمه سلامت دارای نسخه سفید، نیازی به تعویض
+            ندارد
+          </h3>
+        </div>
+        <div class="i">
+          <h3>بوشهر |  پلیس گرجستان مانع بازگشت بازیکنان شاهین به ایران شد</h3>
+        </div>
+        <div class="j">
+          <div>
+            <img
+              src="https://img9.irna.ir/d/r1/2019/09/11/2/156620024.jpg"
+              alt=""
+            />
+            <h3 class="secondm">بازار خودرو، صعود قیمت‌ها و رکود معاملات</h3>
+          </div>
+        </div>
+        <div class="k">
+          <div>
+            <img
+              src="https://img9.irna.ir/d/r1/2019/09/23/2/156646307.jpg"
+              alt=""
+            />
+            <h3 class="secondm">
+              ایجاد پنجره واحد درخواست مجوزهای ۴۰ گانه در وزارت تعاون
+            </h3>
+          </div>
+        </div>
+      </main>
+      <h3 class="title">پوشش ویژه اخبار کرونا در ایران</h3>
+      <section id="main2">
+        <div class="l m2">
+          <h3>تأثیر اقتصادی کرونا بر بخش حمل و نقل باربری اثاثیه منزل</h3>
+          <img
+            src="https://img9.irna.ir/d/r1/2020/06/20/2/157180368.jpg"
+            alt=""
+          />
+        </div>
+        <div class="m m2">
+          <h3 class="text">
+            آسیای میانه |  دیپلمات های آمریکایی در کابل به کرونا مبتلا شدند
+          </h3>
+          <img
+            class="image"
+            src="https://img9.irna.ir/d/r2/2020/06/20/2/157180384.jpg"
+            alt=""
+          />
+        </div>
+        <div class="n">
+          <div>
+            <img
+              src="https://img9.irna.ir/d/r2/2020/06/17/3/157177663.jpg"
+              alt=""
+            />
+            <h3>
+              آخرین وضعیت ابتلا به کرونا در جهان، این آمار به‌روز رسانی می‌شود
+            </h3>
+            <p>
+              لندن - ایرنا - آخرین وضعیت شیوع ویروس کرونا ( کووید ۱۹) در سراسر
+              جهان که سازمان بهداشت جهانی آن را به عنوان پدیده‌ای «همه گیر»
+              شناسایی و اعلام کرد به نقل از رسانه‌های معتبر و گزارش‌های دفاتر
+              ایرنا در خارج از کشور و گروه‌های خبری مناطق ایرنا، این آمار با
+              دریافت آخرین گزارش‌ها به روز رسانی می‌شود.
+            </p>
+          </div>
+        </div>
+        <div class="o m2">
+          <h3>
+            کیش | کرونا در کیش |  ورود خودروهای سواری با پلاک سرزمین اصلی ممنوع شد
+          </h3>
+          <img
+            src="https://img9.irna.ir/d/r2/2020/06/20/2/157180519.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="p m2">
+          <h3>چین |  آزمایش های واکسن کرونا وارد مرحله نهایی شد</h3>
+          <img
+            src="https://img9.irna.ir/d/r2/2020/05/27/2/157146997.jpg"
+            alt=""
+          />
+        </div>
+        <div class="q m2">
+          <h3>
+            اروپا |  کرونا در فرانسه؛ قدرت فوق‌العاده سگ‌ها برای تشخیص کووید-19
+          </h3>
+          <img
+            src="https://img9.irna.ir/d/r2/2020/06/20/2/157180316.jpg"
+            alt=""
+          />
+        </div>
+
+        <div class="r m2">
+          <h3>خوزستان |  اهواز از وضعیت قرمز کرونا خارج شد</h3>
+          <img
+            src="https://img9.irna.ir/d/r2/2020/06/20/2/157180690.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section id="main4">
+        <div class="s flex">
+          <div class="matn">
+            <h3 class="h3">
+              اعتبارات مواد مخدر در حوزه درمان افزایش یافته است
+            </h3>
+            <p class="none">
+              تهران - ایرنا - مدیر گروه سینمایی «هنر شهر آفتاب»، گفت: سینمای
+              ایران همچون دیگر حوزه‌های خدماتی…
+            </p>
+          </div>
+          <div class="m4img">
+            <img src="/image/news/157182462 (Copy).jpg" alt="" />
+          </div>
+        </div>
+        <div class="t">
+          <img
+            src="https://img9.irna.ir/d/r1/2019/06/16/3/156401442.jpg"
+            alt=""
+          />
+          <h3>معدوم‌سازی بیش از ۲.۲ میلیون کیلوگرم فراورده دام و طیور</h3>
+          <p>
+            تهران- ایرنا- رییس سازمان دامپزشکی کشور گفت: در دو ماهه نخست سال ۹۹
+            نزدیک دو میلیون و ۲۴۶ هزارو ۸۷ کیلوگرم فراورده‌های خام دام و طیور
+            در…
+          </p>
+        </div>
+        <div class="u">
+          <img
+            src="https://img9.irna.ir/d/r1/2019/07/01/3/156439632.jpg"
+            alt=""
+          />
+          <h3>تبدیل اینستاگرام به قطب سرگرمی با بستن شبکه‌های اجتماعی</h3>
+          <p>
+            تهران- ایرنا- وزیر ارتباطات گفت: اینستاگرام به دلیل سیاست‌های ما و
+            از دور خارج کردن بقیه پلتفرم‌ها امروز به قطب سرگرمی تبدیل شده است،
+            همه…
+          </p>
+        </div>
+        <div class="v flex">
+          <div class="matn">
+            <h3 class="h3">خبر خوب در جامعه وجود دارد اما کم بیان می‌شود</h3>
+            <p class="none">
+              تهران- ایرنا- معاون آموزشی وزیر علوم، تحقیقات و فناوری اظهار داشت:
+              طبق اعلام ستاد ملی مقابله…
+            </p>
+          </div>
+          <div class="m4img">
+            <img src="/image/news/157013814.jpg" alt="" />
+          </div>
+        </div>
+        <div class="w flex">
+          <div class="matn">
+            <h3 class="h3">
+              معافیت تحصیلی دانش‌آموزان دیپلم در سال ۹۹ تمدید شد
+            </h3>
+            <p class="none">
+              تهران- ایرنا- سازمان سنجش آموزش کشور از تمدید معافیت تحصیلی
+              دانش‌آموزان دیپلم در سال ۹۹ خبر…
+            </p>
+          </div>
+          <div class="m4img">
+            <img src="/image/news/157165394.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <h3 id="world">جهان</h3>
+      <section id="main5">
+        <div class="aa m5">
+          <h3>
+            آمریکا | تیراندازی در مینیاپولیس آمریکا یک کشته و ۱۱ مجروح برجا گذاشت
+          </h3>
+
+          <img src="/image/news/157181755 (Copy).jpg" alt="" />
+        </div>
+        <div class="bb m5">
+          <h3>
+            دفتر پکن |  چاینا دیلی: موضوع ادعایی آژانس درباره ایران قدیمی است
+          </h3>
+
+          <img src="/image/news/157180178 (Copy).jpg" alt="" />
+        </div>
+        <div class="cc">
+          <div><img src="/image/news/157151897.jpg" alt="" /></div>
+
+          <div>
+            <h3>خشم مردم آمریکا و تهدیدات ترامپ</h3>
+            <p>
+              پرونده‌های خبری  | موج خشم و ناآرامی‌ها در سراسر آمریکا در اعتراض
+              به تکرار اقدامات نژادپرستانه و قتل یک شهروند دیگر سیاهپوست به دست
+              نیروهای پلیس این کشور و تهدیدات دونالد ترامپ به مقابله نظامی با
+              معترضان در شهرهای مختلف این کشور رو به گسترش است و نیروهای پلیس و
+              ارتش که برای سرکوب اعتراض‌های مردمی به صحنه آمده اند در مقابل کاخ
+              سفید با گاز اشک آور به مردم معترض حمله کردند.
+            </p>
+          </div>
+        </div>
+        <div class="dd m5">
+          <h3>دفتر مسکو |  کرملین هم به وعده‌های ترامپ اعتماد ندارد</h3>
+
+          <img src="/image/news/157182133 (Copy).jpg" alt="" />
+        </div>
+
+        <div class="ee m5">
+          <h3>
+            آمریکا  | ترامپ به بهانه اشتغال، محدودیت‌های جدید روادید وضع می‌کند
+          </h3>
+
+          <img src="/image/news/157181832 (Copy).jpg" alt="" />
+        </div>
+
+        <div class="ff m5">
+          <h3>
+            آسیای غربی  | وزیر خارجه عراق : استفاده از زور امنیت منطقه را تهدید
+            می‌کند
+          </h3>
+
+          <img src="/image/news/157182073 (Copy).jpg" alt="" />
+        </div>
+        <div class="gg m5">
+          <h3>سیای غربی  |  خورشیدگرفتگی در کشورهای حاشیه جنوبی خلیج فارس</h3>
+
+          <img src="/image/news/157181558 (Copy).jpg" alt="" />
+        </div>
+      </section>
+      <section id="main6">
+        <div class="hh">
+          <img src="/image/news/157178972.jpg" alt="" />
+          <h3>
+            پژوهش‌های پزشکی |  چرا کووید ۱۹ در برخی مبتلایان بدون علامت است؟
+          </h3>
+          <p>
+            تهران - ایرنا - مطالعات اخیر نشان می‌دهد افرادی که پس از ابتلا به
+            کووید ۱۹ علایم شدیدی ندارند، در مقایسه با افرادی که عوارض شدیدی نشان
+            می‌دهند،…
+          </p>
+        </div>
+        <div class="ii">
+          <img src="/image/news/156512429.jpg" alt="" />
+          <h3>
+            زنان و خانواده | فرزند مادر ایرانی و پدر خارجی چگونه تابعیت می‌گیرد؟
+          </h3>
+          <p>
+            تهران - ایرنا - سخنگوی سازمان ثبت احوال کشور گفت: متقاضیان دریافت
+            تابعیت ایرانی زیر ۱۸ سال، بر اساس قانون اعطای تابعیت به فرزندان حاصل
+            از ازدواج…
+          </p>
+        </div>
+        <div class="jj">
+          <img src="/image/news/157180343.jpg" alt="" />
+          <h3>اروپا: چرا تروئیکای اروپا چرخید؟</h3>
+          <p>
+            تهران- ایرنا- به سختی می‌توان در پس اقدام سه کشور اروپایی موسوم به
+            تروئیکای اروپا در تصویب قطعنامه ضد ایرانی در شورای حکام آژانس
+            بین‌المللی انرژی…
+          </p>
+        </div>
+        <div class="kk">
+          <img src="/image/news/157161757.jpg" alt="" />
+          <h3>
+            بهداشت و سلامت |  افراط در آراستگی ظاهری نشانه کدام اختلال شخصیت است؟
+          </h3>
+          <p>
+            تهران - ایرنا - یک روانپزشک گفت: افراد ظاهربین همواره در مقایسه خود
+            با دیگران بدون دیدن عیب خود به دنبال ایجاد جذابیت هستند و ناخواسته
+            به اختلال…
+          </p>
+        </div>
+        <div class="ll">
+          <img src="/image/news/157068904.jpg" alt="" />
+          <h3>راه و مسکن :چرا فاصله‌گذاری اجتماعی در پروازها رعایت نشد؟</h3>
+          <p>
+            تهران- ایرنا- دبیر انجمن شرکت‌های حمل‌و نقل هوایی در خصوص عدم رعایت
+            فاصله‌گذاری اجتماعی در پروازها با وجود دستور صریح وزیر راه و
+            شهرسازی، گفت:…
+          </p>
+        </div>
+        <div class="mm">
+          <img src="/image/news/157183799.jpg" alt="" />
+          <h3>آمریکا |  چرا نام کتاب بولتون جنجال برانگیز شد؟</h3>
+          <p>
+            تهران –ایرنا– پس از محتوای کتاب جدید مشاور امنیت ملی پیشین آمریکا،
+            نام آن نیز جنجال برانگیز شد.
+          </p>
+        </div>
+      </section>
+      <h3 id="ostan">استان ها</h3>
+      <section id="main7">
+        <div class="nn m7">
+          <h3>
+            آذربایجان غربی | موسیقی عاشیقی محور اتحاد فرهنگی در آذربایجان‌غربی
+          </h3>
+
+          <img src="/image/news/m7/156468517 (Copy).jpg" alt="" />
+        </div>
+        <div class="oo m7">
+          <h3>فارس  | شیرازگردی ویروس با اتوبوس</h3>
+
+          <img src="/image/news/m7/157151445 (Copy).jpg" alt="" />
+        </div>
+        <div class="pp">
+          <div>
+            <img
+              src="https://img9.irna.ir/d/r2/2020/06/19/3/157179218.jpg"
+              alt=""
+            />
+
+            <h3>
+              دوم تیرماه با مهمترین اخبار کرونا و رونق صادرات غیرنفتی با
+              بازگشایی مرزها
+            </h3>
+            <p>
+              استان‌ها | ایرنا - چند هفته گذشته و همزمان با تغییر رفتار مردم و
+              نادیده گرفتن دستورالعمل‌های…
+            </p>
+          </div>
+        </div>
+        <div class="qq m7">
+          <h3>
+            مازندران  | دانشگاه علوم پزشکی مازندران مجوز پارک علم‌وفناوری سلامت
+            گرفت
+          </h3>
+
+          <img src="/image/news/m7/157183694 (Copy).jpg" alt="" />
+        </div>
+        <div class="rr m7">
+          <h3>فارس | اصولگرایان فارس در اندیشه انتخابات ۱۴۰۰</h3>
+
+          <img src="/image/news/m7/156440455 (Copy).jpg" alt="" />
+        </div>
+        <div class="ss m7">
+          <h3>هرمزگان۲۱۸۰  |  هکتار از مزارع پرورش آبزیان هرمزگان بیمه شدند</h3>
+
+          <img src="/image/news/m7/157183428 (Copy).jpg" alt="" />
+        </div>
+        <div class="tt m7">
+          <h3>یزد | آبیاری نوین راهکاری برای صرفه جویی در بافق</h3>
+
+          <img src="/image/news/m7/157168137 (Copy).jpg" alt="" />
+        </div>
+      </section>
+      <h3 id="tahlil">تحلیل و تفسیر</h3>
+
+      <section id="main8">
+        <div class="uu m8">
+          <div class="matn">
+            <h3>سازمان اکو و توسعه روابط اقتصادی کشورهای عضو</h3>
+            <p>
+              تهران- ایرنا- کارشناسان می‌گویند سازمان اکو دارای ظرفیت‌هایی است
+              تا توسعه اقتصادی کشورهای عضو…
+            </p>
+          </div>
+          <img src="/image/news/m8/156657335 (Copy).jpg" alt="" />
+        </div>
+        <div class="vv">
+          <img src="/image/news/m8/156467952 (Copy).jpg" alt="" />
+          <div>
+            <h3>آتش مافیای سوخت بر انبار طلای سیاه</h3>
+            <p>
+              تهران-ایرنا-بررسی گزارش‌های رسمی نشان می‌دهد که علاوه بر برخی
+              قاچاقچیان و کلاهبرداران داخلی، قاچاقچیان خارجی نیز در امر قاچاق
+              سوخت ایرانی…
+            </p>
+          </div>
+        </div>
+        <div class="ww">
+          <img src="/image/news/m8/157183260 (Copy).jpg" alt="" />
+          <div>
+            <h3>ترامپ و آخرین تلاش‌ها برای مذاکره با ایران</h3>
+            <p>
+              تهران- ایرنا- فراز و نشیب‌های بسیار در مناسبات تهران و واشنگتن طی
+              یک سال اخیر، نه تنها تکیه و تاکید بر«مذاکره» با ایران را در گفتمان
+              رهبران…
+            </p>
+          </div>
+        </div>
+        <div class="xx m8">
+          <div class="matn">
+            <h3>دوئل ترامپ- بولتون در آستانه انتخابات ۲۰۲۰</h3>
+            <p>
+              تهران- ایرنا- اتهامات وارد شده بر «دونالد ترامپ» رییس‌جمهوری
+              آمریکا از سوی «جان بولتون» مشاور…
+            </p>
+          </div>
+          <img src="/image/news/m8/157177152 (Copy).jpg" alt="" />
+        </div>
+        <div class="yy m8">
+          <div class="matn">
+            <h3>تهدیدی مشترک برای تهران و مسکو در آسیای مرکزی</h3>
+            <p>
+              تهران- ایرنا- جمهوری اسلامی ایران و روسیه بر اساس انگاره تهدید
+              مشترک خارجی، به حضور قدرت‌های…
+            </p>
+          </div>
+          <img src="/image/news/m8/157181896 (Copy).jpg" alt="" />
+        </div>
+      </section>
+      <section id="main9">
+        <div class="a1 m9">
+          <div class="matn">
+            <h3>سیاست | جایگاه مدعی‌العموم در برابر تخریب‌ها علیه دولت</h3>
+            <p>
+              تهران- ایرناپلاس- دولت یازدهم و دوازدهم در این سال‌ها با سعه‌صدر
+              با مخالفان دائم‌المنتقد خود…
+            </p>
+          </div>
+          <img src="/image/news/m9/157162730.jpg" alt="" />
+        </div>
+        <div class="a2">
+          <img src="/image/news/m9/157030069.jpg" alt="" />
+          <div>
+            <h3>
+              اقتصاد | چگونه رتبه جهانی ایران در توسعه فناوری اطلاعات بهبود یافت؟
+            </h3>
+            <p>
+              تهران-ایرناپلاس- براساس شاخص توسعه فناوری اطلاعات و ارتباطات که از
+              طرف اتحادیه بین‌المللی مخابرات منتشر می‌شود، ایران از سال ۲۰۱۳ تا
+              ۲۰۱۷…
+            </p>
+          </div>
+        </div>
+        <div class="a3">
+          <img src="/image/news/m9/157029402 (Copy).jpg" alt="" />
+          <div>
+            <h3>
+              سیاست | تداوم هجمه‌ها علیه دولت؛ آیا یک وزارتخانه متولی فضای مجازی
+              است؟
+            </h3>
+            <p>
+              تهران- ایرناپلاس- باز هم فضای مجازی، بهانه‌ای برای حمله به وزیر
+              ارتباطات و فناوری اطلاعات و طرح اتهام کم‌کاری در توسعه شبکه ملی
+              ارتباط…
+            </p>
+          </div>
+        </div>
+        <div class="a4 m9">
+          <div class="matn">
+            <h3>اقتصاد | صادرات به چین را باور کنیم»</h3>
+            <p>
+              تهران- ایرناپلاس- مجیدرضا حریری می‌گوید: بسیاری از کالاهای ایرانی
+              وجود دارد که می‌توان در بازار…
+            </p>
+          </div>
+          <img src="/image/news/m9/157178061.jpg" alt="" />
+        </div>
+        <div class="a5 m9">
+          <div class="matn">
+            <h3>اقتصاد | هفت خوان دریافت وام ازدواج آسان‌تر می‌شود؟</h3>
+            <p>
+              تهران- ایرناپلاس- با اینکه برخی از انتظار طولانی مدت خود در صف وام
+              ازدواج شکایت می‌کنند، بانک…
+            </p>
+          </div>
+          <img src="/image/news/m9/157177639.jpg" alt="" />
+        </div>
+      </section>
+      <h3 id="parvande">پرونده‌های خبری</h3>
+      <section id="main10">
+        <div class="b1">
+          <div class="container">
+            <img src="/image/news/m10/157176591 (Copy).jpg" alt="" />
+            <h3 class="txt fkh">درگذشت محمد علی کشاورز</h3>
+          </div>
+        </div>
+        <div class="b2">
+          <div class="container">
+            <img src="/image/news/m10/157169116 (Copy).jpg" alt="" />
+            <h3 class="txt">سفر وزیر امور خارجه به سوریه، ترکیه و روسیه</h3>
+          </div>
+        </div>
+        <div class="b3">
+          <div class="container">
+            <img src="/image/news/m10/157162703 (Copy).jpg" alt="" />
+            <h3 class="txt">توسعه شهری و روستایی خراسان جنوبی</h3>
+          </div>
+        </div>
+        <div class="b4">
+          <div class="container">
+            <img src="/image/news/m10/156928157 (Copy).jpg" alt="" />
+
+            <h3 class="txt">تصویب قطعنامه ای متفاوت درباره ایران در آژانس</h3>
+          </div>
+        </div>
+        <div class="b5">
+          <div class="container">
+            <img src="/image/news/m10/157185054 (Copy).jpg" alt="" />
+
+            <h3 class="txt">معضل اعتیاد و ضرورت به روزرسانی قوانین سلبی</h3>
+          </div>
+        </div>
+        <div class="b6">
+          <div class="container">
+            <img src="/image/news/m10/157108835.jpg" alt="" />
+            <h3 class="txt lkh">بازار لوازم خانگی</h3>
+          </div>
+        </div>
+      </section>
+      <h3 id="zendegi">زندگی</h3>
+      <section id="main11">
+        <div class="c1 m11"> <h3>
+            مهارت‌ و آموزش | قبل از دوچرخه سواری، این ۹ مورد را بدانیم
+          </h3>
+
+          <img src="/image/news/m11/157183821 (Copy).jpg" alt="" />
+        </div></div>
+        <div class="c2 m11"> <h3>
+            تلویزیون | بهترین سریال‌هایی که تماشای آن‌ها در گرم‌ترین فصل سال توصیه می‌شود
+          </h3>
+
+          <img src="/image/news/m11/157184389 (Copy).jpg" alt="" />
+        </div></div>
+        <div class="c3"><div>
+            <img
+              src="/image/news/m11/157172994.jpg"
+              alt=""
+            />
+
+            <h3>
+             ۴ مرحله ساده برای زنده نگهداشتن گیاهان در خانه
+            </h3>
+            <p>
+              سفر و تفریح | هیچ جادویی برای مراقبت صحیح از گیاهان خانگی وجود ندارد، تنها کافی است چند قانون ساده را رعایت کنید. 
+            </p>
+          </div></div>
+        <div class="c4 m11">  <h3>
+            راهنمای خرید | راهنمای خرید ساعت هوشمند؛ بازاری که هر روز جذاب‌تر می‌شود
+          </h3>
+
+          <img src="/image/news/m11/157180968 (Copy).jpg" alt="" />
+        </div>
+        <div class="c5 m11">  <h3>
+            غذاهای ایرانی | طرز تهیه خورشت بامیه؛ پیشنهادی جذاب
+          </h3>
+
+          <img src="/image/news/m11/157184577 (Copy).jpg" alt="" />
+        </div>
+        <div class="c6 m11"> <h3>
+            علم و نجوم| ۹ نکته درباره درباره ماده تاریک؛ مرموزترین ماده کیهان
+          </h3>
+
+          <img src="/image/news/m11/157184010 (Copy).jpg" alt="" />
+        </div>
+        <div class="c7 m11">  <h3>
+            غذاهای ایرانی | طرز تهیه سوپ دال عدس؛ مقوی و جذاب
+          </h3>
+
+          <img src="/image/news/m11/157183156 (Copy).jpg" alt="" />
+        </div>
+      </section>
+      <h3 id="varzesh">ورزش</h3>
+      <section id="main12">
+        <div class="d1 m12"> <h3>
+            توپ و تور | درخواست ایران برای میزبانی والیبال نوجوانان و جوانان جهان
+          </h3>
+
+          <img src="/image/news/m12/156640712 (Copy).jpg" alt="" /></div>
+        <div class="d2 m12"> <h3>
+            فوتبال | سعادتمند: اراده لازم برای خصوصی‌سازی سرخآبی‌ها وجود دارد
+          </h3>
+
+          <img src="/image/news/m12/157123608 (Copy).jpg" alt="" /></div>
+        <div class="d3 "><div>
+            <img
+              src="/image/news/m12/157186554.jpg"
+              alt=""
+            />
+
+            <h3>
+             عضو هیات مدیره پرسپولیس: می‌توانیم بدهی‌های خارجی را تا آخر تابستان پرداخت کنیم
+            </h3>
+            <p>فوتبال | تهران- ایرنا- عضو هیات مدیره باشگاه پرسپولیس اعلام کرد تا آخر تابستان می‌توانیم کل بدهی های خارجی مان را پرداخت کنیم. 
+          </div></div>
+        <div class="d4 m12"> <h3>
+            فوتبال | سرمربی تیم فوتبال نوجوانان: می‌توانیم به جام جهانی برویم
+          </h3>
+
+          <img src="/image/news/m12/156446054 (Copy).jpg" alt="" /></div>
+        <div class="d5 m12"> <h3>
+            فوتبال | بررسی پرونده قرارداد ویلموتس در سازمان بازرسی
+          </h3>
+
+          <img src="/image/news/m12/156783555 (Copy).jpg" alt="" /></div>
+        <div class="d6 m12"> <h3>
+            فوتبال | صالحی امیری: چه ایرادی دارد مردم بدانند فدراسیون فوتبال چقدر هزینه می‌کند؟ 
+          </h3>
+
+          <img src="/image/news/m12/157185444 (Copy).jpg" alt="" /></div>
+        <div class="d7 m12"> <h3>
+            ورزش‌های پایه | معاون وزیر ورزش: بازگشت به قبل از کرونا دشوار است
+          </h3>
+
+          <img src="/image/news/m12/157073542 (Copy).jpg" alt="" /></div>
+      </section>
+      <section id="main13">
+        <dv class="e1"><h3>سایر زبان‌ها</h3>
+<div class="m13">中文</div>
+<div class="m13">English</div>
+<div class="m13">العربیة</div>
+<div class="m13">Türkçe</div>
+<div class="m13">Español</div>
+<div class="m13">Pусский</div>
+<div class="m13">اردو</div>
+<div class="m13">Français</div>
+
+        </dv>
+        <dv class="e2"><h3>خانواده ایرنا</h3>
+<div class="m13">ایرناپلاس</div>
+<div class="m13">ایرنازندگی</div>
+<div class="m13">مدرسه خبر</div>
+<div class="m13">روزنامه ایران</div>
+<div class="m13">ایران آنلاین</div>
+<div class="m13">روزنامه ایران‌دیلی</div>
+<div class="m13">ایران ورزشی آنلاین</div>
+<div class="m13">ایران سپید</div></dv>
+        <dv class="e3"><h3> صفحات ویژه </h3>
+        <div class="m13">پرونده‌های خبری</div>
+        <div class="m13">پرسش از خبر</div>
+        <div class="m13">دانشنامه</div>
+        <div class="m13">ایران‌شناسی</div>
+        <div class="m13">کتابخانه ایرنا</div>
+        <div class="m13">اینفوگرافیک</div>
+        <div class="m13">جداول و نتایج لیگ‌ها</div>
+        <div class="m13">برگزیدگان جشنواره </div>
+        <div class="m13">تولیدات ایرنا</div></dv>
+<dv class="e4"><h3>عناوین کل اخبار</h3>
+        <div class="m13">سرخط اخبار برگزیده</div>
+        <div class="m13">عناوین کل سایت‌های ایرنا</div>
+        <div class="m13">عناوین اخبار استانی</div>
+        <div class="m13">عناوین اخبار خارجی</div>
+        <div class="m13">عناوین دفتر پژوهش‌</div></dv>
+<dv class="e5 lastf"><h3>دسترسی سریع</h3>
+        <div class="m13">درباره ایرنا</div>
+        <div class="m13">تماس با ایرنا</div>
+        <div class="m13">آرشیو ایرنا</div>
+        <div class="m13">سؤالات متداول</div>
+        <div class="m13">روابط عمومی ایرنا</div>
+        <div class="m13">
+IRNA Photo Gallery
+</div>
+        <div class="m13">دریافت خبرنامه ایمیلی</div></dv>
+      </section>
+    </main>
+  </body>
+  <script src="/Jquery/jquery-3.5.1.js"></script>
+  <script src="/projects/4/4.js"></script>
+</html>

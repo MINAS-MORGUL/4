@@ -1,0 +1,1656 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-Tanha */
+@font-face {
+  font-family: Tanha;
+  src: url("http://fonts.codearena.ir/rastikerdar/tanha/tanha.eot");
+  src: url("http://fonts.codearena.ir/rastikerdar/tanha/tanha.eot?#iefix")
+      format("embedded-opentype"),
+    url("http://fonts.codearena.ir/rastikerdar/tanha/tanha.woff") format("woff"),
+    url("http://fonts.codearena.ir/rastikerdar/tanha/tanha.ttf")
+      format("truetype");
+  font-weight: normal;
+}
+/* font-Vazir */
+@font-face {
+  font-family: Vazir;
+  src: url("http://fonts.codearena.ir/rastikerdar/vazir/vazir.eot");
+  src: url("http://fonts.codearena.ir/rastikerdar/vazir/vazir.eot?#iefix")
+      format("embedded-opentype"),
+    url("http://fonts.codearena.ir/rastikerdar/vazir/vazir.woff") format("woff"),
+    url("http://fonts.codearena.ir/rastikerdar/vazir/vazir.ttf")
+      format("truetype");
+  font-weight: normal;
+}
+
+// nav menuuuuu
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  font-family: Vazir;
+  @media (max-width: 825px) {
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+  #header {
+    background: linear-gradient(to left, #00539c 0%, #0066ff 100%);
+    position: relative;
+    @media (max-width: 825px) {
+      background: linear-gradient(to left, #9e1030 0%, #bc243c 100%);
+    }
+  }
+  #header:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+  .search {
+    float: right;
+    padding: 30px 10px;
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+  input {
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: right;
+  }
+  .logo {
+    float: left;
+    padding: 26px 0 26px;
+  }
+  .logo a {
+    color: rgb(243, 247, 4);
+    font-size: 28px;
+    display: block;
+    padding: 0 0 0 20px;
+    @media (max-width: 1230px) {
+      font-size: 20px;
+      padding: 0;
+    }
+  }
+  nav {
+    float: right;
+  }
+  nav > ul {
+    float: left;
+    position: relative;
+    font-size: 14px;
+  }
+  nav li {
+    list-style: none;
+    float: left;
+  }
+  nav .dropdown {
+    position: relative;
+  }
+  nav li a {
+    float: left;
+    padding: 35px;
+  }
+  nav li a:hover {
+    color: black;
+    transform: scale(1.3);
+    transition: ease 0.5s;
+  }
+  nav li ul {
+    display: none;
+  }
+  nav li:hover ul {
+    display: inline;
+  }
+  nav li li {
+    float: none;
+  }
+  // iran va pazhoohesh
+  nav .dropdown ul {
+    position: absolute;
+    left: -35%;
+    top: 106%;
+    background: rgb(220, 223, 231);
+    border-bottom: 3px solid #0066ff;
+
+    @media (max-width: 1170px) {
+      left: -80%;
+    }
+    @media (max-width: 900px) {
+      left: -100%;
+    }
+    li {
+      white-space: nowrap;
+    }
+    li a {
+      padding: 10px 35px;
+      font-size: 15px;
+      min-width: 200px;
+      text-align: center;
+    }
+  }
+
+  // ostanha va jahan
+
+  nav .mega-dropdown {
+    width: 100%;
+    position: absolute;
+    top: 106%;
+    left: 0;
+    background: rgb(220, 223, 231);
+    overflow: hidden;
+    text-align: right;
+    border-bottom: 3px solid #0066ff;
+
+    a {
+      margin: 0.5rem 1rem;
+    }
+    .mega-col {
+      text-align: center;
+      width: 33%;
+      float: right;
+    }
+    .jahan {
+      width: 50%;
+      text-align: center;
+    }
+  }
+  nav li li a {
+    margin: auto;
+    float: none;
+    color: #333;
+    display: block;
+    padding: 8px 10px;
+    border-radius: 3px;
+    font-size: 15px;
+  }
+  nav li li a:hover {
+    background: #2467f8;
+    color: whitesmoke;
+    transform: scale(1);
+  }
+
+  @media only screen and (max-width: 1170px) {
+    nav > ul > li > a {
+      padding: 35px 15px;
+    }
+  }
+  @media only screen and (min-width: 960px) {
+    nav {
+      display: block !important;
+    }
+  }
+}
+
+@media (min-width: 825px) {
+  #mobile {
+    display: none;
+  }
+}
+@media (max-width: 825px) {
+  .logo {
+    width: 100%;
+
+    text-align: center;
+  }
+  nav {
+    display: none;
+  }
+  #mobile {
+    .nav {
+      display: block;
+    }
+    .multi-level,
+    .item ul,
+    .nav input[type="checkbox"] {
+      display: none;
+    }
+    #menu:checked ~ .multi-level,
+    .item input:checked ~ ul {
+      display: block;
+    }
+
+    /* arrow */
+
+    .arrow {
+      width: 12px;
+      height: 12px;
+      vertical-align: middle;
+      float: left;
+      z-index: 0;
+
+      margin: 17px 1rem 0 1rem;
+    }
+
+    .item input + .arrow {
+      transform: rotate(-90deg);
+      transition: 0.5s;
+    }
+    .item input:checked + .arrow {
+      transform: rotate(0deg);
+      transition: 0.5s;
+    }
+
+    label {
+      width: 100%;
+      display: block;
+      /* تا بعدا علامت فلشو بهش بچسبونم */
+      // که با کلیک روو فلش هم باز شن بقیه منو
+      position: relative;
+    }
+    .nav {
+      width: 100%;
+      background: #9e1030;
+      overflow: hidden;
+      border-bottom: 3px solid #e41d3b;
+    }
+
+    // ایکون همبرگر
+    #nav-icon {
+      font-size: 30px;
+      padding-left: 2rem;
+
+      color: #e41d3b;
+
+      background: #ede9de;
+    }
+
+    .nav ul {
+      line-height: 50px;
+
+      padding: 0 2.5em;
+      list-style: none;
+      text-decoration: none;
+      color: #ffffff;
+      width: 100%;
+      font-weight: 800;
+    }
+    .item a {
+      margin: auto;
+      text-decoration: none;
+      color: white;
+      font-weight: 800;
+    }
+    // گزینه هایی که فلش دارن
+
+    label {
+      line-height: 50px;
+
+      list-style: none;
+      text-decoration: none;
+      color: #ffffff;
+      width: 100%;
+      font-weight: 800;
+    }
+
+    // منوهای داخل منو چند مرحله ایی
+    .item ul {
+      background: #d3d3d3;
+    }
+    // منوهای داخل منو چند مرحله ایی
+    .nav li a {
+      line-height: 50px;
+
+      padding: 0 4em;
+      list-style: none;
+      text-decoration: none;
+      color: #000000;
+      font-weight: 400;
+      width: 100%;
+
+      &:hover {
+        background-color: #e41d3b;
+        border-radius: 10px;
+        color: whitesmoke;
+        transition: 0.2s;
+      }
+    }
+    #nav-icon:hover {
+      color: #000000;
+    }
+
+    // فلش دارا
+    label:hover {
+      color: rgb(12, 12, 12);
+      transition: 0.5s;
+      cursor: pointer;
+    }
+    // لینکهای اصلی
+    .item a:hover {
+      color: rgb(0, 0, 0);
+      transition: 0.5s;
+    }
+  }
+}
+// mainnnnnnnnnnnnnnnnnnn
+
+#mainasl {
+  padding-top: 6rem;
+  .title {
+    color: red;
+  }
+  img {
+    height: 100%;
+    max-width: 100%;
+  }
+  margin-top: 2rem;
+  overflow: hidden;
+  text-align: right;
+
+  p {
+    padding: 1rem 0.5rem;
+    font-family: vazir;
+    color: rgb(43, 43, 43);
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  h3 {
+    margin: auto;
+    font-size: 0.9rem;
+    font-family: tanha;
+    padding: 0 0.5rem;
+    color: rgb(0, 34, 146);
+    &:hover {
+      color: rgb(255, 20, 118);
+      cursor: pointer;
+    }
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 15% repeat(4, 1fr) 15%;
+    grid-template-rows: auto;
+    grid-template-areas: ". A B C C .";
+    margin-bottom: 0.8rem;
+    gap: 1rem;
+    @media (max-width: 1300px) {
+      grid-template-columns: auto;
+    }
+
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(4, 1fr) 4%;
+    }
+
+    @media (max-width: 900px) {
+      grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    }
+    @media (max-width: 760px) {
+      grid-template-columns: 10% auto auto 10%;
+      grid-template-areas:
+        ". C C ."
+        ". A B .";
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 5% auto auto 5%;
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: auto;
+    }
+    $bg-col: #ede9de;
+
+    .a {
+      grid-area: A;
+      background-color: $bg-col;
+    }
+    .b {
+      grid-area: B;
+      background-color: $bg-col;
+    }
+    .c {
+      grid-area: C;
+      background-color: $bg-col;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+
+  // main1111111
+
+  #main1 {
+    $border-r: rgb(0, 102, 255);
+
+    $bg-col: #ede9de;
+
+    display: grid;
+    grid-template-columns: 15% repeat(4, 1fr) 15%;
+
+    grid-template-rows: auto;
+    gap: 1rem;
+    grid-template-areas:
+      ". D E J K ."
+      ". F G J K ."
+      ". H I J K .";
+    @media (max-width: 1300px) {
+      grid-template-columns: auto;
+    }
+
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(4, 1fr) 4%;
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: 5% repeat(4, auto) 5%;
+    }
+    @media (max-width: 760px) {
+      h3 {
+        margin: 1rem auto;
+      }
+      grid-template-columns: 10% auto auto 10%;
+      grid-template-areas:
+        ". J K ."
+        ". D E ."
+        ". F  G ."
+        ". H  I .";
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 5% auto auto 5%;
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: 0% auto auto 0%;
+    }
+    .d {
+      grid-area: D;
+      background-color: $bg-col;
+      border-right: 2px solid $border-r;
+    }
+    .e {
+      grid-area: E;
+      background-color: $bg-col;
+      border-right: 2px solid $border-r;
+    }
+    .f {
+      grid-area: F;
+      background-color: $bg-col;
+      border-right: 2px solid $border-r;
+    }
+    .g {
+      grid-area: G;
+      background-color: $bg-col;
+      border-right: 2px solid $border-r;
+    }
+    .h {
+      grid-area: H;
+      background-color: $bg-col;
+      border-right: 2px solid $border-r;
+    }
+    .i {
+      grid-area: I;
+      background-color: $bg-col;
+      border-right: 2px solid $border-r;
+    }
+    .j {
+      grid-area: J;
+      background-color: $bg-col;
+      border-right: 2px solid $border-r;
+    }
+    .k {
+      grid-area: K;
+      background-color: $bg-col;
+      border-right: 2px solid $border-r;
+    }
+  }
+
+  // main222
+  #main2 {
+    h3 {
+      margin: auto;
+    }
+
+    background-color: rgb(243, 241, 241);
+    $bg-col: rgb(253, 251, 251);
+    display: grid;
+    grid-template-columns: 15% repeat(3, 1fr) 15%;
+    grid-template-rows: repeat(3, 1fr);
+
+    @media (max-width: 900px) {
+      grid-template-rows: auto;
+    }
+    gap: 1rem;
+    grid-template-areas:
+      ". L  M   N  ."
+      ". O  P   N  ."
+      ". Q  R   N  .";
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 0 repeat(3, 1fr) 0;
+    }
+
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(3, 1fr) 4%;
+      .m2 {
+        img {
+          display: none;
+        }
+      }
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: 5% repeat(3, 1fr) 5%;
+    }
+    @media (max-width: 760px) {
+      h3 {
+        margin: 1rem auto;
+      }
+      padding-top: 4rem;
+      grid-template-columns: 10% auto auto 10%;
+      grid-template-areas:
+        ". N N ."
+        ". L M ."
+        ". O  P ."
+        ". Q  R .";
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 5% auto auto 5%;
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 0% auto auto 0%;
+    }
+
+    .l {
+      grid-area: L;
+      background-color: $bg-col;
+      display: flex;
+      margin: 1rem auto;
+
+      img {
+        width: 40%;
+        height: auto;
+      }
+    }
+
+    .m {
+      grid-area: M;
+      background-color: $bg-col;
+      display: flex;
+      margin: 1rem auto;
+
+      img {
+        width: 40%;
+        height: auto;
+      }
+    }
+    .n {
+      grid-area: N;
+      background-color: $bg-col;
+      margin: 1rem auto;
+    }
+    .o {
+      grid-area: O;
+      background-color: $bg-col;
+      display: flex;
+      margin: 1rem auto;
+
+      img {
+        width: 40%;
+        height: auto;
+      }
+    }
+    .p {
+      grid-area: P;
+      background-color: $bg-col;
+      display: flex;
+      margin: 1rem auto;
+
+      img {
+        width: 40%;
+        height: auto;
+      }
+    }
+    .q {
+      grid-area: Q;
+      background-color: $bg-col;
+      display: flex;
+      margin: 1rem auto;
+
+      img {
+        width: 40%;
+        height: auto;
+      }
+    }
+    .r {
+      grid-area: R;
+      background-color: $bg-col;
+      display: flex;
+      margin: 1rem auto;
+
+      img {
+        width: 40%;
+        height: auto;
+      }
+    }
+  }
+
+  // main44444444444
+  #main4 {
+    $bg-col: #ede9de;
+    h3 {
+      margin: auto;
+    }
+    display: grid;
+    grid-template-columns: 15% repeat(4, auto) 15%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      ". S S T U ."
+      ". V V T U ."
+      ". W W T U .";
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 0 repeat(4, 23.4%) 0;
+    }
+    @media (max-width: 1170px) {
+      grid-template-columns: 0 repeat(4, 1fr) 0;
+    }
+
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(4, 1fr) 4%;
+      grid-template-rows: repeat(3, 120px);
+      .matn p {
+        padding: 0 0.5rem;
+      }
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: 5% repeat(4, 1fr) 5%;
+      .none {
+        display: none;
+      }
+
+      .matn {
+        margin: auto;
+      }
+    }
+
+    @media (max-width: 760px) {
+      grid-template-columns: 10% auto auto 10%;
+      grid-template-rows: repeat(3, auto);
+
+      grid-template-areas:
+        ". T U ."
+        ". S S ."
+        ". V  V ."
+        ". W W .";
+      p {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 5% auto auto 5%;
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 0% auto auto 0%;
+    }
+    .flex {
+      display: flex;
+    }
+
+    .m4img {
+      max-width: 30%;
+      height: auto;
+      @media (min-width: 984px) {
+        max-width: 25%;
+      }
+    }
+
+    .s {
+      grid-area: S;
+      background-color: $bg-col;
+    }
+    .t {
+      grid-area: T;
+      background-color: $bg-col;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @media (max-width: 760px) {
+        img {
+          height: 75%;
+        }
+      }
+    }
+    .u {
+      grid-area: U;
+      background: $bg-col;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @media (max-width: 760px) {
+        img {
+          height: 75%;
+        }
+      }
+    }
+    .v {
+      grid-area: V;
+      background-color: $bg-col;
+    }
+    .w {
+      grid-area: W;
+      background-color: $bg-col;
+    }
+  }
+  // main55555555555555555
+  #world {
+    color: rgb(250, 12, 24);
+  }
+  #main5 {
+    background-color: rgb(243, 241, 241);
+    $bg-col: rgb(253, 251, 251);
+
+    display: grid;
+    grid-template-columns: 15% repeat(3, 1fr) 15%;
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 1rem;
+    grid-template-areas:
+      ". AA  BB   CC  ."
+      ". DD  EE   CC  ."
+      ". FF  GG   CC  .";
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 0% repeat(3, 1fr) 0%;
+    }
+
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(3, 1fr) 4%;
+      .m5 {
+        img {
+          display: none;
+        }
+      }
+      h3 {
+        border-right: solid 2px rgb(29, 29, 224);
+      }
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: 5% repeat(3, 1fr) 5%;
+    }
+    @media (max-width: 760px) {
+      h3 {
+        margin: 1rem auto;
+      }
+      grid-template-columns: 10% auto auto 10%;
+      grid-template-rows: auto;
+      grid-template-areas:
+        ". CC CC ."
+        ". AA BB ."
+        ". DD  EE ."
+        ". FF  GG .";
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 5% auto auto 5%;
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 0% auto auto 0%;
+    }
+
+    .m5 {
+      margin: 1rem auto;
+      display: flex;
+      img {
+        width: 40%;
+        height: auto;
+      }
+    }
+
+    .aa {
+      grid-area: AA;
+      background-color: $bg-col;
+    }
+    .bb {
+      grid-area: BB;
+      background-color: $bg-col;
+    }
+    .cc {
+      grid-area: CC;
+      background-color: $bg-col;
+      margin: 1rem 0;
+    }
+    .dd {
+      grid-area: DD;
+      background-color: $bg-col;
+    }
+    .ee {
+      grid-area: EE;
+      background-color: $bg-col;
+    }
+    .ff {
+      grid-area: FF;
+      background-color: $bg-col;
+    }
+    .gg {
+      grid-area: GG;
+      background-color: $bg-col;
+    }
+  }
+
+  // main666666666666666
+  #main6 {
+    $bg-col: #ede9de;
+    display: grid;
+    grid-template-columns: 15% repeat(6, 1fr) 15%;
+    grid-template-rows: auto;
+    grid-template-areas: ". HH II JJ KK LL MM .";
+
+    img {
+      width: 100%;
+      max-height: 40%;
+
+      @media (max-width: 1800px) {
+        max-height: 30%;
+      }
+      @media (max-width: 1480px) {
+        max-height: 20%;
+      }
+      @media (max-width: 1300px) {
+        max-height: 35%;
+      }
+
+      @media (max-width: 1100px) {
+        max-height: 30%;
+      }
+    }
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 0% repeat(6, 1fr) 0%;
+      p {
+        margin: 0 0 1rem 0;
+      }
+    }
+
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(3, 1fr) 4%;
+
+      grid-template-areas:
+        ". HH II JJ ."
+        ". KK LL MM .";
+      img {
+        width: 100%;
+        max-height: 50%;
+      }
+    }
+
+    @media (max-width: 900px) {
+      grid-template-columns: 5% repeat(3, 1fr) 5%;
+    }
+    @media (max-width: 850px) {
+      img {
+        width: 100%;
+        max-height: 40%;
+      }
+    }
+    @media (max-width: 760px) {
+      grid-template-columns: 10% repeat(2, 1fr) 10%;
+      grid-template-areas:
+        ". HH II ."
+        ". JJ KK ."
+        ". LL MM .";
+      p {
+        display: none;
+      }
+
+      img {
+        width: 100%;
+        max-height: 70%;
+      }
+      h3 {
+        margin: auto;
+      }
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 5% repeat(2, 1fr) 5%;
+    }
+
+    @media (max-width: 540px) {
+      img {
+        width: 100%;
+        max-height: 60%;
+      }
+    }
+    @media (max-width: 480px) {
+      img {
+        width: 100%;
+        max-height: 55%;
+      }
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 0% repeat(2, 1fr) 0%;
+    }
+
+    .hh {
+      grid-area: HH;
+      background-color: $bg-col;
+    }
+    .ii {
+      grid-area: II;
+      background-color: $bg-col;
+    }
+    .jj {
+      grid-area: JJ;
+      background-color: $bg-col;
+    }
+    .kk {
+      grid-area: KK;
+      background-color: $bg-col;
+    }
+    .ll {
+      grid-area: LL;
+      background-color: $bg-col;
+    }
+    .mm {
+      grid-area: MM;
+      background-color: $bg-col;
+    }
+  }
+  #ostan {
+    color: rgb(250, 12, 24);
+  }
+  // main777777
+  #main7 {
+    padding-bottom: 1rem;
+    h3 {
+      margin: auto;
+    }
+    background-color: rgb(243, 241, 241);
+    $bg-col: rgb(253, 251, 251);
+
+    display: grid;
+    grid-template-columns: 15% repeat(3, 1fr) 15%;
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 1rem;
+    grid-template-areas:
+      ". NN  OO   PP  ."
+      ". QQ  RR   PP  ."
+      ". SS  TT   PP  .";
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 0% repeat(3, 1fr) 0%;
+    }
+
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(3, 1fr) 4%;
+
+      .m7 {
+        img {
+          display: none;
+        }
+      }
+      h3 {
+        border-right: solid 2px rgb(29, 29, 224);
+      }
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: 5% repeat(3, 1fr) 5%;
+
+      grid-template-rows: auto;
+    }
+    @media (max-width: 760px) {
+      h3 {
+        margin: 1rem auto;
+      }
+      grid-template-columns: 10% 1fr 1fr 10%;
+
+      grid-template-areas:
+        ". PP PP ."
+        ". NN OO ."
+        ". QQ  RR ."
+        ". SS  TT .";
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 5% auto auto 5%;
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 0% auto auto 0%;
+    }
+    .m7 {
+      margin-top: 1rem;
+      display: flex;
+      img {
+        width: 40%;
+        height: auto;
+      }
+    }
+    .nn {
+      grid-area: NN;
+      background-color: $bg-col;
+    }
+    .oo {
+      grid-area: OO;
+      background-color: $bg-col;
+    }
+    .pp {
+      grid-area: PP;
+      background-color: $bg-col;
+      margin-top: 1rem;
+    }
+    .qq {
+      grid-area: QQ;
+      background-color: $bg-col;
+    }
+    .rr {
+      grid-area: RR;
+      background-color: $bg-col;
+    }
+    .ss {
+      grid-area: SS;
+      background-color: $bg-col;
+    }
+    .tt {
+      grid-area: TT;
+      background-color: $bg-col;
+    }
+  }
+  #tahlil {
+    color: red;
+  }
+
+  // main88888888888
+  #main8 {
+    $bg-col: #ede9de;
+
+    h3 {
+      margin: auto;
+    }
+    display: grid;
+    grid-template-columns: 15% repeat(4, 1fr) 15%;
+    grid-template-rows: repeat(3, 1fr);
+
+    grid-template-areas:
+      ". UU UU VV WW ."
+      ". XX XX VV WW ."
+      ". YY YY VV WW .";
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 0 repeat(4, 23.4%) 0;
+    }
+    @media (max-width: 1170px) {
+      grid-template-columns: 0 repeat(4, 1fr) 0;
+    }
+
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(4, 1fr) 4%;
+      grid-template-rows: repeat(3, 120px);
+      p {
+        padding: 0.5rem 0.5rem;
+      }
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: 5% repeat(4, 1fr) 5%;
+      .m8 {
+        p {
+          display: none;
+        }
+        // kh mohemmmmmmmmmmmmmmmmmm
+        // axaye 3 radife paein iran michasban be goosheha
+        .matn {
+          margin: auto;
+        }
+      }
+    }
+
+    @media (max-width: 760px) {
+      grid-template-columns: 5% 1fr 1fr 5%;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+        ". VV WW ."
+        ". UU UU ."
+        ". XX XX ."
+        ". YY YY .";
+      p {
+        display: none;
+      }
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 5% 1fr 1fr 5%;
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 0% 1fr 1fr 0%;
+    }
+    .m8 {
+      display: flex;
+
+      img {
+        max-width: 25%;
+        height: auto;
+      }
+      @media (max-width: 900px) {
+        img {
+          max-width: 35%;
+          height: auto;
+        }
+      }
+      @media (max-width: 760px) {
+        img {
+          max-width: 25%;
+          height: auto;
+        }
+      }
+    }
+
+    .uu {
+      grid-area: UU;
+      background-color: $bg-col;
+    }
+    .vv {
+      grid-area: VV;
+      background-color: $bg-col;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @media (max-width: 760px) {
+        img {
+          height: 75%;
+        }
+      }
+    }
+    .ww {
+      grid-area: WW;
+      background-color: $bg-col;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @media (max-width: 760px) {
+        img {
+          height: 75%;
+        }
+      }
+    }
+    .xx {
+      grid-area: XX;
+      background-color: $bg-col;
+    }
+    .yy {
+      grid-area: YY;
+      background-color: $bg-col;
+    }
+  }
+  // main 99999999999999
+  #main9 {
+    $bg-col: #ede9de;
+
+    h3 {
+      margin: auto;
+    }
+    display: grid;
+    grid-template-columns: 15% repeat(4, 1fr) 15%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+      ". A1 A1 A2 A3 ."
+      ". A4 A4 A2 A3 ."
+      ". A5 A5 A2 A3 .";
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 0 repeat(4, 23.4%) 0;
+    }
+    @media (max-width: 1170px) {
+      grid-template-columns: 0 repeat(4, 1fr) 0;
+    }
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(4, 1fr) 4%;
+      grid-template-rows: repeat(3, 120px);
+      p {
+        padding: 1rem 0.5rem;
+      }
+    }
+
+    @media (max-width: 900px) {
+      grid-template-columns: 5% repeat(4, 1fr) 5%;
+      .m9 {
+        p {
+          display: none;
+        }
+        .matn {
+          margin: auto;
+        }
+      }
+    }
+    @media (max-width: 760px) {
+      grid-template-columns: 5% 1fr 1fr 5%;
+      grid-template-rows: repeat(3, auto);
+      grid-template-areas:
+        ". A2 A3 ."
+        ". A1 A1 ."
+        ". A4 A4 ."
+        ". A5 A5 .";
+      p {
+        display: none;
+      }
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 5% 1fr 1fr 5%;
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 0% 1fr 1fr 0%;
+    }
+    .m9 {
+      display: flex;
+
+      img {
+        max-width: 25%;
+        height: auto;
+      }
+      @media (max-width: 900px) {
+        img {
+          max-width: 35%;
+          height: auto;
+        }
+      }
+      @media (max-width: 760px) {
+        img {
+          max-width: 25%;
+          height: auto;
+        }
+      }
+    }
+    .a1 {
+      grid-area: A1;
+      background-color: $bg-col;
+    }
+    .a2 {
+      grid-area: A2;
+      background-color: $bg-col;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @media (max-width: 760px) {
+        img {
+          height: 75%;
+        }
+      }
+    }
+    .a3 {
+      grid-area: A3;
+      background-color: $bg-col;
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @media (max-width: 760px) {
+        img {
+          height: 75%;
+        }
+      }
+    }
+    .a4 {
+      grid-area: A4;
+      background-color: $bg-col;
+    }
+    .a5 {
+      grid-area: A5;
+      background-color: $bg-col;
+    }
+  }
+  #parvande {
+    color: red;
+    margin: 0.5rem auto;
+  }
+  // main10000000000
+  #main10 {
+    .container {
+      position: relative;
+
+      img {
+        opacity: 0.7;
+
+        &:hover {
+          cursor: pointer;
+          opacity: 0.9;
+        }
+      }
+    }
+    .txt {
+      position: absolute;
+      bottom: 10%;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      &:hover {
+        color: rgb(255, 255, 255);
+      }
+    }
+    .fkh {
+      left: 15%;
+    }
+    .lkh {
+      left: 15%;
+    }
+    display: grid;
+    grid-template-columns: 15% repeat(6, 1fr) 15%;
+    grid-template-rows: auto;
+    grid-template-areas: ". B1 B2 B3 B4 B5 B6 .";
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 0% repeat(6, 1fr) 0%;
+    }
+
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(3, 1fr) 4%;
+      grid-template-areas:
+        ". B1 B2 B3 ."
+        ". B4 B5 B6 .";
+      .lkh {
+        left: 30%;
+      }
+    }
+
+    @media (max-width: 760px) {
+      grid-template-columns: 5% repeat(2, 1fr) 5%;
+      grid-template-areas:
+        ". B1 B2 ."
+        ". B3 B4 ."
+        ". B5 B6 .";
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 5% repeat(2, 1fr) 5%;
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 0% repeat(2, 1fr) 0%;
+    }
+
+    .b1 {
+      grid-area: B1;
+    }
+    .b2 {
+      grid-area: B2;
+    }
+    .b3 {
+      grid-area: B3;
+    }
+    .b4 {
+      grid-area: B4;
+    }
+    .b5 {
+      grid-area: B5;
+    }
+    .b6 {
+      grid-area: B6;
+    }
+  }
+  #zendegi {
+    color: red;
+  }
+  // main1111111111
+  #main11 {
+    padding-bottom: 1rem;
+    h3 {
+      margin: auto;
+    }
+
+    background-color: rgb(243, 241, 241);
+    $bg-col: rgb(253, 251, 251);
+    display: grid;
+    grid-template-columns: 15% repeat(3, 1fr) 15%;
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 1rem;
+    grid-template-areas:
+      ". C1  C2   C3  ."
+      ". C4  C5   C3  ."
+      ". C6  C7   C3  .";
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 0% repeat(3, 1fr) 0%;
+    }
+
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(3, 1fr) 4%;
+
+      .m11 {
+        img {
+          display: none;
+        }
+      }
+      h3 {
+        border-right: solid 2px rgb(29, 29, 224);
+      }
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: 5% repeat(3, 1fr) 5%;
+
+      grid-template-rows: auto;
+    }
+    @media (max-width: 760px) {
+      h3 {
+        margin: 1rem auto;
+      }
+      grid-template-columns: 10% 1fr 1fr 10%;
+      grid-template-areas:
+        ". C3 C3 ."
+        ". C1 C2 ."
+        ". C4  C5 ."
+        ". C6  C7 .";
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 5% auto auto 5%;
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 0% auto auto 0%;
+    }
+    .m11 {
+      display: flex;
+      margin-top: 1rem;
+      img {
+        width: 40%;
+        height: auto;
+      }
+    }
+
+    .c1 {
+      grid-area: C1;
+      background-color: $bg-col;
+    }
+    .c2 {
+      grid-area: C2;
+      background-color: $bg-col;
+    }
+    .c3 {
+      grid-area: C3;
+      background-color: $bg-col;
+      margin-top: 1rem;
+    }
+    .c4 {
+      grid-area: C4;
+      background-color: $bg-col;
+    }
+    .c5 {
+      grid-area: C5;
+      background-color: $bg-col;
+    }
+    .c6 {
+      grid-area: C6;
+      background-color: $bg-col;
+    }
+    .c7 {
+      grid-area: C7;
+      background-color: $bg-col;
+    }
+  }
+  #varzesh {
+    color: red;
+  }
+  // main1111111222222222
+  #main12 {
+    padding-bottom: 1rem;
+    h3 {
+      margin: auto;
+    }
+
+    background-color: rgb(243, 241, 241);
+    $bg-col: rgb(253, 251, 251);
+
+    display: grid;
+    grid-template-columns: 15% repeat(3, 1fr) 15%;
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 1rem;
+    grid-template-areas:
+      ". D1  D2   D3  ."
+      ". D4  D5   D3  ."
+      ". D6  D7   D3  .";
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 0% repeat(3, 1fr) 0%;
+    }
+
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(3, 1fr) 4%;
+
+      .m12 {
+        img {
+          display: none;
+        }
+      }
+      h3 {
+        border-right: solid 2px rgb(29, 29, 224);
+      }
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: 5% repeat(3, 1fr) 5%;
+
+      grid-template-rows: auto;
+    }
+    @media (max-width: 760px) {
+      h3 {
+        margin: 1rem auto;
+      }
+      grid-template-columns: 10% 1fr 1fr 10%;
+      grid-template-areas:
+        ". D3 D3 ."
+        ". D1 D2 ."
+        ". D4  D5 ."
+        ". D6  D7 .";
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 5% auto auto 5%;
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 0% auto auto 0%;
+    }
+    .m12 {
+      display: flex;
+      margin-top: 1rem;
+      img {
+        width: 40%;
+        height: auto;
+      }
+    }
+
+    .d1 {
+      grid-area: D1;
+      background-color: $bg-col;
+    }
+    .d2 {
+      grid-area: D2;
+      background-color: $bg-col;
+    }
+    .d3 {
+      grid-area: D3;
+      background-color: $bg-col;
+      margin-top: 1rem;
+    }
+    .d4 {
+      grid-area: D4;
+      background-color: $bg-col;
+    }
+    .d5 {
+      grid-area: D5;
+      background-color: $bg-col;
+    }
+    .d6 {
+      grid-area: D6;
+      background-color: $bg-col;
+    }
+    .d7 {
+      grid-area: D7;
+      background-color: $bg-col;
+    }
+  }
+  #main13 {
+    background: linear-gradient(to right, #00539c 0%, #0066ff 100%);
+
+    margin: 0;
+    color: whitesmoke;
+
+    h3 {
+      margin: 1rem auto;
+      color: rgb(243, 247, 4);
+    }
+    .m13 {
+      font-family: vazir;
+      margin: 1rem;
+      cursor: pointer;
+      width: 85%;
+      &:hover {
+        color: rgb(109, 109, 109);
+      }
+    }
+    @media (max-width: 825px) {
+      background: linear-gradient(to right, #9e1030 0%, #bc243c 100%);
+    }
+
+    display: grid;
+    grid-template-columns: 15% repeat(5, 1fr) 15%;
+    grid-template-rows: auto;
+
+    gap: 1rem;
+    grid-template-areas: ". E1  E2   E3  E5 E4  .";
+
+    @media (max-width: 1300px) {
+      grid-template-columns: 0% repeat(5, 1fr) 0%;
+    }
+
+    @media (max-width: 984px) {
+      grid-template-columns: 4% repeat(5, 1fr) 4%;
+    }
+    @media (max-width: 900px) {
+      grid-template-columns: 5% repeat(5, 1fr) 5%;
+    }
+    @media (max-width: 760px) {
+      grid-template-columns: 10% auto auto 10%;
+      grid-template-areas:
+        ". E1 E2 ."
+        ". E3 E5 ."
+        ". . E4 .";
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: 5% auto auto 5%;
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: 0% auto auto 0%;
+    }
+
+    .e1 {
+      grid-area: E1;
+    }
+    .e2 {
+      grid-area: E2;
+    }
+    .e3 {
+      grid-area: E3;
+    }
+    .e4 {
+      grid-area: E4;
+    }
+    .e5 {
+      grid-area: E5;
+    }
+  }
+}
